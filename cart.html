@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>KK Shopiee Cart</title>
+    <style>
+        body {
+            background-color: #9fdf9f; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	    font-family: "Courier New", monospace
+        }
+
+        .cart {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .cart h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cart li {
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .cart .total {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .cart .checkout {
+            padding: 10px 20px;
+            background-color: #2874f0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .order-placed {
+            display: none;
+            background-color: green;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+	    font-family: "Courier New", monospace
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <main>
+            <div class="cart">
+                <h1>Your Cart</h1>
+                <ul id="cartItems">
+                    <!-- Cart items will be inserted here -->
+                </ul>
+                <div class="total" id="totalAmount"></div>
+                <button class="checkout" id="checkoutButton">Checkout</button>
+            </div>
+        </main>
+    </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+        <p><b>&#9742; Contact number: 9944699989<br>
+        &#9993; Email: kksupershopi2023@mail.com<br>
+        &#127752; Instagram: @kksupershoppie</b></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cartItems = document.getElementById('cartItems');
+            const totalAmount = document.getElementById('totalAmount');
+            const checkoutButton = document.getElementById('checkoutButton');
+            const cartContent = JSON.parse(localStorage.getItem('cartContent')) || [];
+
+            function updateCartView() {
+                cartItems.innerHTML = '';
+                let total = 0;
+                cartContent.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+                    cartItems.appendChild(li);
+                    total += item.price;
+                });
+                totalAmount.textContent = `Total: ₹${total.toFixed(2)}`;
+            }
+
+            checkoutButton.addEventListener('click', () => {
+                localStorage.removeItem('cartContent');
+                window.location.href = "detail.html"; // Navigate to the order placed page
+            });
+
+            updateCartView();
+        });
+    </script>
+</body>
+</html>
