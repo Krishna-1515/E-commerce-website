@@ -20,7 +20,7 @@ This is a fully responsive **E-Commerce Website** built using only **HTML**, **C
 ### Steps to Setup
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/e-commerce-website.git
+    git clone https://github.com/Krishna-1515/e-commerce-website.git
     ```
 
 2. Navigate to the project directory:
