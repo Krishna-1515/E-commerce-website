@@ -1,53 +1,69 @@
-This is a fully responsive E-Commerce Website built using only HTML, CSS, and JavaScript. It includes basic functionalities such as product listing, adding products to the cart, and a checkout page. This project is designed for learning purposes and demonstrates how to create a simple e-commerce user interface without any backend.
+## Overview
+This is a fully responsive **E-Commerce Website** built using only **HTML**, **CSS**, and **JavaScript**. It includes basic functionalities such as product listing, adding products to the cart, and a checkout page. This project is designed for learning purposes and demonstrates how to create a simple e-commerce user interface without any backend.
 
-Features
-Product listing with categories
-Add to cart functionality
-Shopping cart with price updates
-Checkout form (static)
-Responsive layout for desktop and mobile
-Tech Stack
-Frontend: HTML, CSS, JavaScript
-No Backend: This project does not include a backend or database functionality. All data is handled locally using JavaScript.
-Installation
-Prerequisites
-A web browser (Chrome, Firefox, Safari, etc.)
-A text editor to modify the code (VSCode, Sublime, etc.)
-Steps to Setup
-Clone the repository:
+## Features
+- Product listing with categories
+- Add to cart functionality
+- Shopping cart with price updates
+- Checkout form (static)
+- Responsive layout for desktop and mobile
 
-git clone https://github.com/yourusername/e-commerce-website.git
-Navigate to the project directory:
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **No Backend**: This project does not include a backend or database functionality. All data is handled locally using JavaScript.
 
-cd e-commerce-website
-Open index.html in your browser to start browsing the e-commerce site.
+## Installation
+### Prerequisites
+- A web browser (Chrome, Firefox, Safari, etc.)
+- A text editor to modify the code (VSCode, Sublime, etc.)
 
-Usage
-Product Listing:
+### Steps to Setup
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/e-commerce-website.git
+    ```
 
-Browse products displayed on the home page.
-Use JavaScript to dynamically add products to the cart.
-Shopping Cart:
+2. Navigate to the project directory:
+    ```bash
+    cd e-commerce-website
+    ```
 
-Add products to the cart and view the total price.
-Remove items from the cart.
-Adjust quantities of products directly in the cart.
-Checkout:
+3. Open `index.html` in your browser to start browsing the e-commerce site.
 
-The checkout page includes a static form to simulate order processing (no backend functionality).
+## Usage
+- **Product Listing:**
+    - Browse products displayed on the home page.
+    - Use JavaScript to dynamically add products to the cart.
+
+- **Shopping Cart:**
+    - Add products to the cart and view the total price.
+    - Remove items from the cart.
+    - Adjust quantities of products directly in the cart.
+
+- **Checkout:**
+    - The checkout page includes a static form to simulate order processing (no backend functionality).
+  
 Screenshots
 
 Dashboard
-![image](https://github.com/user-attachments/assets/7a2d0b63-df21-42d3-a1cc-4e2111ac18c5)
 
-cart 
-![image](https://github.com/user-attachments/assets/436e25d8-2c86-453c-9b6e-248d6891ac72)
+![Screenshot 2024-09-23 112906](https://github.com/user-attachments/assets/74515d2e-dfa7-4139-a999-48714e08b0f4)
 
-Detail
-![image](https://github.com/user-attachments/assets/e9fa2b5c-608e-4154-ab75-f3702b03cad4)
+Cart Page
 
-payment
-![image](https://github.com/user-attachments/assets/e6205879-dbe8-4969-b866-e818cc5e04e3)
+![Screenshot 2024-09-23 112926](https://github.com/user-attachments/assets/ef8939ac-bbf6-4ecd-8fb1-543784d9f371)
+
+Detial Page
+
+![Screenshot 2024-09-23 112938](https://github.com/user-attachments/assets/b9315503-623e-4ef4-b67d-74f3b59c6d29)
+
+Payment Page
+
+![Screenshot 2024-09-23 112956](https://github.com/user-attachments/assets/1cab3608-c963-4bbc-88f9-f71b10ca6f82)
+
+Oder Sucess Page
+
+![Screenshot 2024-09-23 113007](https://github.com/user-attachments/assets/82228aad-bfee-453b-925a-6e2fe7458e05)
 
 
 
